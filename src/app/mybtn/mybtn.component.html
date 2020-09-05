@@ -1,2 +1,15 @@
-<p>mybtn works!</p>
-<button mat-button (click)="onSubmit()">Basic</button>
+
+<button appSlider mat-raised-button>Directive</button>
+<button [disabled]="condition ? 'disabled' : null" mat-raised-button>Basic1</button>
+
+<button mat-raised-button>Basic2</button>
+<button mat-raised-button [disabled]="null">Basic3</button>
+
+<button mat-raised-button disabled >Basic4</button>
+<button mat-raised-button [disabled]="'disabled'">Basic5</button>
+
+
+
+
+
+<!-- // чтобы не отобразился null -->
