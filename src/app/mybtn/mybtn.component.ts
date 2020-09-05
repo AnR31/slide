@@ -1,15 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-mybtn',
   templateUrl: './mybtn.component.html',
   styleUrls: ['./mybtn.component.css']
 })
-export class MybtnComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
+export class MybtnComponent {
+  onSubmit() {
+    alert('You click the button!');
   }
-
 }
